@@ -1,16 +1,17 @@
 #include <cstdio>
 
-void (int *arr)
+void ubahNilai(int a, int b)
 {
-    for(int i=0;i<5;i++){
-        printf("%d", *(arr+i));
-    }
-    // ...
+    a = a + 5;
+    b = b + 3;
 }
+
 
 int main()
 {
-    int num[5] = {1, 2, 3, 4, 5}, i;
-    printArr(num);
+    int num1 = 6;
+    int num2 = 10;
+    ubahNilai(num1, num2);
+    printf("%d %d\n", num1, num2);
     return 0;
 }
