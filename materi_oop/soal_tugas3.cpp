@@ -24,7 +24,7 @@ public:
 class Dolphin: public Animal{
 public:
     void dol(){
-        cout<<"Nama binatang ini adalah "<<name2<<" dia berumur "<<age2<<" tahun dia hidup di "<<tinggal2<<endl;
+        cout<<"Nama dolpin ini adalah "<<name2<<" dia berumur "<<age2<<" tahun dia hidup di "<<tinggal2<<endl;
     }
 };
 
@@ -38,11 +38,14 @@ int main(){
     getline(cin,name1);
     cout<<"Masukkan tempat tinggal zebra : "; 
     getline(cin,hdp1);
+    cout<<"Masukkan umur zebra : ";scanf("%d", &age1);getchar();
     cout<<"Masukkan nama dolpin : ";
     getline(cin,name2);
+    cout<<"Masukkan umur dolpin : ";scanf("%d", &age2);getchar();
     cout<<"Masukkan tempat tinggal dolpin : "; getline(cin,hdp2);
-    cout<<"Masukkan umur zebra : ";scanf("%d", &age1);
-    cout<<"Masukkan umur dolpin : ";scanf("%d", &age2);
+    //cout<<"Masukkan umur zebra : ";scanf("%d", &age1);
+    //cout<<"Masukkan umur dolpin : ";scanf("%d", &age2);
+    
     Zebra zebra;Dolphin dolpin;
     zebra.set_info(name1,age1,hdp1,name2,age2,hdp2);
     dolpin.set_info(name1,age1,hdp1,name2,age2,hdp2);

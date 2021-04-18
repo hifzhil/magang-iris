@@ -2,8 +2,10 @@
 #include<iostream>
 using namespace std;
 class LuasBidang{
+//private:
+  //  int a, b;
 public:
-    int a, b;
+    int a,b;
     int luas(){
         return a*b;
     }

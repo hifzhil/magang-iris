@@ -3,10 +3,10 @@
 #include<string>
 using namespace std;
 
-class Mother{
-//protected:
-public:
+class Ibu{
+protected:
     string ibu, anak;
+public:
     void set_info(string a, string b){
         ibu=a;
         anak=b;
@@ -17,7 +17,7 @@ public:
 	}
 };
 
-class Daughter : public Mother{
+class Anak:public Ibu{
 public:
 	void disp()
 	{
@@ -30,10 +30,10 @@ int main ()
     string nama1,nama2;
     cout<<"Masukkan nama ibu : "; getline(cin,nama1);
     cout<<"Masukkan nama anak : "; getline(cin,nama2);
-    Mother ibu;Daughter anak;
-    ibu.set_info(nama1,nama2);
-	anak.set_info(nama1,nama2);
-    ibu.disp();
-    anak.disp();
+    Ibu ibu1;Anak anak1;
+    ibu1.set_info(nama1,nama2);
+	anak1.set_info(nama1,nama2);
+    ibu1.disp();
+    anak1.disp();
 	return 0;
 }

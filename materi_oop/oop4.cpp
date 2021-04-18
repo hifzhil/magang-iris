@@ -15,6 +15,12 @@ public:
     }
     void disp(){
     cout<<"\nBagian real = "<<real_op()<<"\nBagian Imaginer = "<<imaginer_op()<<endl;
+    if(imaginer_op()>=0){
+        cout<<""<<real_op()<<" + "<<imaginer_op()<<"i"<<endl;
+    }
+    else{
+        cout<<""<<real_op()<<" - "<<-1*imaginer_op()<<"i"<<endl;
+    }
     }
 };
 
